@@ -14,3 +14,9 @@ Instructions on use
 5)If you decide you no longer want it.  Then press the Delete firewall button and trash the exe.  
 
 Application by Humberto Ortega for open source use :)
+
+
+
+Release Version 1.0
+
+https://github.com/humberto1ortega/SteamBlock/releases/latest
