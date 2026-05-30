@@ -9,10 +9,8 @@ Instructions on use
 
 3)Press "Block Steam" and "Unblock Steam" as necessary 
 
-Application by Humberto Ortega for open source use :)
 
 
-
-Release Version 1.1
+Release Version 2.0
 
 https://github.com/humberto1ortega/SteamBlock/releases/latest
