@@ -5,8 +5,17 @@
 
 ; Creating/Deleteing firewall rules require running as admin so only run if user agrees
 if !A_IsAdmin {
-	Run('*RunAs "' A_ScriptFullPath '"')
-	ExitApp()
+    try
+    {
+        Run('*RunAs "' A_ScriptFullPath '"')
+    }
+    catch
+    {
+        MsgBox("Admin rights are required to run steam blocker since it creates/deletes firewall rules.")
+        ExitApp()
+    }
+
+    ExitApp()
 }
 
 ; Default dimensions and margins/padding between form controls
@@ -19,7 +28,7 @@ defaultRuleName := "BlockSteamIn"
 
 ; Set main gui with the form name
 mainGui := Gui(, "Pert's Steam Blocker")
-mainGui.SetFont("s11 cRed", "Verdana")
+mainGui.SetFont("s11", "Segoe UI")
 
 ; Set the status message and check if the firewall is currently active to let the user know
 firewallStatus := mainGui.AddText("x10 y" currentY " w" fullWidth " Center" , "Checking Steam Block Status...")
